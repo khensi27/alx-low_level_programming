@@ -1,4 +1,4 @@
-#include <studio.h>
+#include <main.h>
 
 int main() {
 	putchar('_');
