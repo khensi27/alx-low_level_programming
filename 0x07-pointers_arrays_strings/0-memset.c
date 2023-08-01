@@ -1,21 +1,17 @@
-#include "main.h"
+#ifndef FILE_MAIN
+#define FILE_MAIN
 
-/**
- * *_memset - fills memory with a constant byte
- * @s: memory area to be filled
- * @b: char to copy
- * @n: number of times to copy b
- *
- * Return: pointer to the memory area s
- */
-char *_memset(char *s, char b, unsigned int n)
-{
-	unsigned int i;
+int _putchar(char c);
+char *_strcat(char *dest, char *src);
+char *_strncat(char *dest, char *src, int n);
+char *_strncpy(char *dest, char *src, int n);
+int _strcmp(char *s1, char *s2);
+void reverse_array(int *a, int n);
+char *string_toupper(char *);
+char *cap_string(char *);
+char *leet(char *);
+char *rot13(char *);
+void print_number(int n);
+char *infinite_add(char *n1, char *n2, char *r, int size_r);
 
-	for (i = 0; i < n; i++)
-	{
-		s[i] = b;
-	}
-
-	return (s);
-}
+#endif
